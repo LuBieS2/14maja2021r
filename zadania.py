@@ -1,4 +1,4 @@
-File = open('przyklad.txt', 'r')
+File = open('instrukcje.txt', 'r')
 A = list(map(str.strip,File.readlines()))
 A = [item.split(" ") for item in A]
 A= [item for l in A for item in l]
@@ -90,8 +90,21 @@ for x in A:
     if "DOPISZ" in x:
         if A[licznik2+1] in Alphabet:
             dope.append(A[licznik2+1])
-            print(dope)
 print(licznik2)
 print(Dis)
+naj_dop=""
+naj_dop_num=0
 for i in Alphabet:
-    if i in A:
+    licznik = 0
+    if i in dope:
+        licznik=dope.count(i)
+        if licznik>naj_dop_num:
+            naj_dop=i
+            naj_dop_num=licznik
+            print(naj_dop)
+            print(naj_dop_num)
+#4.4
+Xayoo_sie_bije_z_rafonem="" #wtf?
+for i in Sign:
+    Xayoo_sie_bije_z_rafonem=Xayoo_sie_bije_z_rafonem+i
+print(Xayoo_sie_bije_z_rafonem)
