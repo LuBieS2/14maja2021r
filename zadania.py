@@ -1,4 +1,4 @@
-File = open('chuj.txt', 'r')
+File = open('przyklad.txt', 'r')
 A = list(map(str.strip,File.readlines()))
 A = [item.split(" ") for item in A]
 A= [item for l in A for item in l]
@@ -68,21 +68,30 @@ licznik=0
 Dis=2 #Jebac orka
 niggest_number=0
 niggest_phrase=""
+licznik2=0
+ulumulu=len(A)-2
 for i in A:
-    ulumulu=len(A)-2
     if Dis<ulumulu:
-
         if A[Dis] == A[Dis+2]:
             licznik=licznik+1
         if A[Dis] != A[Dis+2]:
             licznik = 1
-
         if licznik>=niggest_number:
             niggest_number=licznik
             niggest_phrase=A[Dis]
-
-    else:
-        licznik=0
     Dis=Dis+2
 print(niggest_number)
 print(niggest_phrase)
+#4.3
+dope=[]
+licznik2=-1
+for x in A:
+    licznik2=licznik2+1
+    if "DOPISZ" in x:
+        if A[licznik2+1] in Alphabet:
+            dope.append(A[licznik2+1])
+            print(dope)
+print(licznik2)
+print(Dis)
+for i in Alphabet:
+    if i in A:
