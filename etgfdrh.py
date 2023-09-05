@@ -85,4 +85,4 @@ for i in A:
         licznik=0
     Dis=Dis+2
     print(niggest_number)
-    print(niggest_phrase)
+    print("chuj")
