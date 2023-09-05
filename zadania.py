@@ -108,3 +108,6 @@ Xayoo_sie_bije_z_rafonem="" #wtf?
 for i in Sign:
     Xayoo_sie_bije_z_rafonem=Xayoo_sie_bije_z_rafonem+i
 print(Xayoo_sie_bije_z_rafonem)
+#kurwa to powinno takie dlugie wyjsc
+#chyba cos sie zkurwilo
+#jak kiara
