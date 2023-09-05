@@ -2,7 +2,6 @@ File = open('instrukcje.txt', 'r')
 A = list(map(str.strip,File.readlines()))
 A = [item.split(" ") for item in A]
 A= [item for l in A for item in l]
-print(A)
 Sign = []
 import string
 Alphabet=list(string.ascii_uppercase)
@@ -61,7 +60,7 @@ for i in A:
 chuj=0
 for i in Sign:
     chuj=chuj+1
-print(Sign)
+#print(Sign)
 print(chuj)
 #4.2
 licznik=0
@@ -108,6 +107,6 @@ Xayoo_sie_bije_z_rafonem="" #wtf?
 for i in Sign:
     Xayoo_sie_bije_z_rafonem=Xayoo_sie_bije_z_rafonem+i
 print(Xayoo_sie_bije_z_rafonem)
-#kurwa to powinno takie dlugie wyjsc
+#kurwa to powinno byc takie dlugie wyjsc
 #chyba cos sie zkurwilo
 #jak kiara
