@@ -32,8 +32,7 @@ def PRZESUN(a):
         n = n + 1
     n=0
     if a != str(a):
-
-        print(" ")
+        pass
     else:
         for i in Sign:
             if a in i:
@@ -43,9 +42,7 @@ def PRZESUN(a):
             Sign[n]=Alphabet[licznik+1]
         else:
             Sign[n]='A'
-
-JD=0
-for i in A:
+for JD, i in enumerate(A):
     if A[JD]=="DOPISZ":
         DOPISZ(A[JD+1])
     if A[JD]=="USUN":
@@ -54,8 +51,6 @@ for i in A:
         ZMIEN(A[JD+1])
     if A[JD]=="PRZESUN":
         PRZESUN(A[JD+1])
-
-    JD=JD+1
 #4.1
 chuj=0
 for i in Sign:
@@ -109,4 +104,3 @@ for i in Sign:
 print(Xayoo_sie_bije_z_rafonem)
 #kurwa to powinno byc takie dlugie
 #chyba cos sie zkurwilo
-#jak kiara
